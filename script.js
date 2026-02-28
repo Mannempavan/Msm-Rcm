@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (serviceSlider) {
 
         let currentIndex = 0;
-        const itemsPerPage = 3;
+        // const itemsPerPage = 3;
+        const itemsPerPage =
+            window.innerWidth < 600 ? 1 :
+                window.innerWidth < 992 ? 2 : 3;
         const items = document.querySelectorAll(".service-item");
         const totalItems = items.length;
         const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -69,7 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoTrack) {
 
         let currentIndexs = 0;
-        const itemsPerPages = 5;
+        // const itemsPerPages = 5;
+        const itemsPerPages =
+            window.innerWidth < 600 ? 2 :
+                window.innerWidth < 992 ? 3 : 5;
         const logos = document.querySelectorAll(".logo-item");
         const totalItems = logos.length;
         const totalPages = Math.ceil(totalItems / itemsPerPages);

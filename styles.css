@@ -107,7 +107,7 @@ body {
 
 /*HERO SECTION */
 
-.hero {
+/* .hero {
     background-position: center;
     padding: 100px 0 200px 0;
     margin-top: 70px;
@@ -116,6 +116,25 @@ body {
 .hero h1 {
     font-size: 52px;
     font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+} */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 160px 0;
+    margin-top: 70px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .hero p {
@@ -621,14 +640,148 @@ body {
         font-size: 16px;
     }
 
+    .service-item {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
     .btn-yellow,
     .btn-dark-outline {
         display: block;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
+    .btn-call {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+        padding: 90px 15px 120px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+.navbar {
+    transition: 0.3s;
+}
+
+.navbar.shadow {
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    .btn-call {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .about-section h2 {
+        text-align: center;
+    }
+
+    .about-highlights {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-item {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        top: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo-item {
+        min-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-bottom: 25px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
     .service-item {
         flex: 0 0 100%;
+    }
+}
+
+/* LARGE SCREEN RESPONSIVE */
+
+@media (min-width: 1400px) {
+    .hero h1 {
+        font-size: 64px;
     }
 }

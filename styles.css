@@ -109,7 +109,7 @@ body {
 
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url('./images/wmremove-transformed.png');
+        url('wmremove-transformed.png');
     background-size: cover;
     background-position: center;
     padding: 100px 0 200px 0;

@@ -10,25 +10,28 @@
 
     <style>
         body {
-            background: #f4f4f4;
-            font-family: Segoe UI, sans-serif;
+            background: linear-gradient(135deg, #f7f7f7, #ffffff);
+            font-family: 'Segoe UI', sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
+            padding: 20px;
         }
 
         .thank-box {
             background: white;
-            padding: 50px 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            padding: 55px 35px;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+            max-width: 520px;
+            width: 100%;
+            animation: fadeIn 0.6s ease;
         }
 
         .icon {
-            font-size: 60px;
+            font-size: 64px;
             color: #FFD700;
             margin-bottom: 15px;
         }
@@ -41,15 +44,17 @@
         p {
             color: #555;
             margin-bottom: 25px;
+            line-height: 1.6;
         }
 
         .btn-yellow {
             background: #FFD700;
             color: #000;
             font-weight: 600;
-            padding: 12px 25px;
+            padding: 12px 26px;
             border-radius: 6px;
             text-decoration: none;
+            display: inline-block;
         }
 
         .btn-yellow:hover {
@@ -58,19 +63,38 @@
 
         .quick-actions {
             margin-top: 20px;
+            font-weight: 600;
         }
 
         .quick-actions a {
             margin: 5px;
             text-decoration: none;
-            font-weight: 600;
             color: #333;
         }
 
         .quick-actions a:hover {
             color: #FFD700;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width:768px) {
+            .thank-box {
+                padding: 40px 20px;
+            }
+        }
     </style>
+
 </head>
 
 <body>
